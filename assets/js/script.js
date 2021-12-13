@@ -3,10 +3,22 @@
 //    THEN a timer starts and I am presented with a question
 var buttonEl = document.querySelector("#start");
 
+// Timer function
+var time = 75;
+var interval;
+
 var startQuiz = function() {
     event.preventDefault();
     console.log("GO")
-}
+    interval = setInterval(function() {
+        time--;
+    
+    }, 1000);
+    console.log(time);
+}; 
+
+
+
 
 
 // WHEN I answer a question
